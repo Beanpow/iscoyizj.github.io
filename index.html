@@ -1,563 +1,453 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
-<!-- <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" /> -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<!-- <link rel="stylesheet" href="css/jemdoc.css" type="text/css" /> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link rel='stylesheet' href="my_style.css">
-<title>Yue's Homepage</title>
+  <!-- <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" /> -->
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <!-- <link rel="stylesheet" href="css/jemdoc.css" type="text/css" /> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel='stylesheet' href="my_style.css">
+  <title>Zeji's Homepage</title>
 </head>
+
 <body>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-    var pageTracker = _gat._getTracker("UA-124162585-1");
-    pageTracker._trackPageview();
-} catch(err) {}</script>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-124162585-1");
+      pageTracker._trackPageview();
+    } catch (err) { }</script>
 
 
-<!--TODO THIS IS MY SCRIPT -->
-<script>
-function FadeIn(q) {
-q.volume=0.05;
-FadeInLoop(q);
-}
-function FadeInLoop(q){
-  var end_vol=50;
-  var vol = q.volume*100;
-  if ( vol+1 < end_vol )
-    {
-        console.log(vol);
-        q.volume = ((vol+1) / 100);
-        setInterval(function() { FadeInLoop(q) }, 1200);
+  <!--TODO THIS IS MY SCRIPT -->
+  <script>
+    function FadeIn(q) {
+      q.volume = 0.05;
+      FadeInLoop(q);
     }
-}
-</script>
+    function FadeInLoop(q) {
+      var end_vol = 50;
+      var vol = q.volume * 100;
+      if (vol + 1 < end_vol) {
+        console.log(vol);
+        q.volume = ((vol + 1) / 100);
+        setInterval(function () { FadeInLoop(q) }, 1200);
+      }
+    }
+  </script>
 
 
 
 
 
-<div class="sidenav">
-  <div>
-    <img class="clip-svg" src="data/avatar.jpg" width="180">
-  </div>
-
-  <div class="menu-title">INTRO</div>
-  <div class="menu-item"><a href="#main_anchor">Home</a></div>
-  <div class="menu-item"><a href="data/cv.pdf" target="_blank">Resume <span class='fas fa-external-link-alt fa-1x'></span> </a></div>
-  <div class="menu-item"><a href="#publications_anchor">Publications</a></div>
-
-  <div class="menu-title">TECH</div>
-  <div class="menu-item"><a href="#collecting_anchor" onclick="collapseFunction('collecting_anchor');">Collecting</a></div>
-  <div class="menu-item"><a href="iros2018-slam-papers" target="_blank">IROS2018SLAM <span class='fas fa-external-link-alt fa-1x'></span> </a></div>
-
-  <div class="menu-title">MISC</div>
-  <div class="menu-item"><a href="https://www.bilibili.com/video/av35787189" target="_blank">我们自35班 <span class='fas fa-external-link-alt fa-1x'></span> </a></div>
-  <div class="menu-item"><a href="#soccer_anchor" onclick="collapseFunction('soccer_anchor');">Soccer</a></div>
-  <div class="menu-item"><a href="#running_anchor" onclick="collapseFunction('running_anchor');">Running</a></div>
-
-  <div class="bottom-logos">
-    <p></p>
-    <a class="fa-a" href="https://www.facebook.com/yue.meng.75" target="_blank">
-      <span class="fab fa-facebook fa-2x"></span>
-    </a>
-    <a class="fa-a" href="https://github.com/mengyuest" target="_blank">
-      <span class="fab fa-github fa-2x"></span>
-    </a>
-    <a class="fa-a" href="https://www.linkedin.com/in/yuemeng95" target="_blank">
-      <span class="fab fa-linkedin fa-2x"></span>
-    </a>
-    <a class="fa-a" href="https://www.instagram.com/misha_ucsd" target="_blank">
-      <span class="fab fa-instagram fa-2x"></span>
-    </a>
-    <p></p>
+  <div class="sidenav">
+    <div>
+      <img class="clip-svg" src="data/avatar.jpg" width="180">
     </div>
 
-</div>
-<div class="main" id="main_anchor">
-  <h1>Meng, Yue (孟岳)</h1>
-  <!-- <hr> </hr> -->
+    <div class="menu-title">INTRO</div>
+    <div class="menu-item"><a href="#main_anchor">Home</a></div>
+    <div class="menu-item"><a href="data/cv.pdf" target="_blank">Resume<span
+          class='fas fa-external-link-alt fa-1x'></span> </a></div>
+    <div class="menu-item"><a href="#publications_anchor">Publications</a></div>
+    <div class="menu-item"><a href="#reseach_anchor">Research Experience</a></div>
 
-  <p>I am a 3<sup>rd</sup> year PhD student at <a href="https://www.mit.edu/">MIT</a> <a href="https://aeroastro.mit.edu">AeroAstro</a>, working in <a href="https://aeroastro.mit.edu">AeroAstro</a>, working in <a href="https://aeroastro.mit.edu/realm"><b>REALM lab</b></a> under <a href="https://lids.mit.edu"><b>LIDS</b></a>. <br />
-    My research topic is <i>using machine learning techniques to safely and stably control robots</i>. <br />
-    Before that, I was an AI Resident at <a href="https://mitibmwatsonailab.mit.edu/?lnk=research">IBM Thomas J. Waston Research Center</a>.<br />
-    I received an M.S. degree in <a href="https://www.ece.ucsd.edu/">ECE</a> at <a href="https://ucsd.edu/">UC San Diego</a> and worked in <a href="https://existentialrobotics.org/">ERL</a> and <a href="https://wcsng.ucsd.edu">WCSNG</a>, <br />
-    and a B.S. degree in the <a href="https://tsinghua.edu.kg/publish/au/index.html">Department of Automation</a> from <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>.</p>
+    <!-- <div class="menu-title">TECH</div>
+    <div class="menu-item"><a href="#collecting_anchor" onclick="collapseFunction('collecting_anchor');">Collecting</a>
+    </div>
+    <div class="menu-item"><a href="iros2018-slam-papers" target="_blank">IROS2018SLAM <span
+          class='fas fa-external-link-alt fa-1x'></span> </a></div>
 
-  <table >
-  <tr class="row">
-    <td class="logo-col">
-      <a href="https://www.mit.edu/" target="_blank" title="MIT">
-      <img class="logo-figure" src="data/logos/MIT-logo.png" alt="MIT"></a>
-    </td>
-    <td class="logo-col">
-      <a href="https://ucsd.edu/" target="_blank" title="UCSD">
-      <img class="logo-figure" src="data/logos/UCSD-logo.png" alt="UCSD"></a>
-    </td>
-    <td class="logo-col">
-      <a href="https://www.tsinghua.edu.cn/en/" target="_blank" title="Tsinghua">
-      <img class="logo-figure" src="data/logos/THU-logo.png" alt="Tsinghua"></a>
-    </td>
-    <td class="logo-col">
-      <a href="http://www.tsinghuaveterans.com/" target="_blank" title="Tsinghua Veterans Soccer">
-      <img class="logo-figure" src="data/logos/tsinghua-veteran-logo.png" alt="Tsinghua Veterans Soccer"></a>
-    </td>
-    <td class="logo-col">
-      <a href="https://sites.google.com/view/sdred/" target="_blank" title="San Diego Red Army Soccer">
-      <img class="logo-figure" src="data/logos/san-diego-red-army.png" alt="San Diego Red Army Soccer"></a>
-    </td>
-    <td class="logo-col">
-      <a href="https://sites.google.com/view/nccsfweb/teams/calblue" target="_blank" title="Calblue Soccer Team">
-      <img class="logo-figure" src="data/logos/calblue-logo.jpg" alt="Calblue Soccer Team"></a>
-    </td>
-  </tr>
-</table>
-<table>
-  <tr>
-    <td class="logo-col1">
-      <a href="https://www.microsoft.com/en-us/research/" target="_blank" title="Microsoft Research">
-        <img class="logo-figure1" src="data/logos/microsoft-logo.jpg" alt="Microsoft Research"></a>
-    </td>
-    <!-- <td class="logo-col1">
-      <a href="https://aeroastro.mit.edu/" target="_blank" title="MIT AeroAstro">
-        <img class="logo-figure1" src="data/logos/aero-astro-logo-long.png" alt="MIT AeroAstro"></a>
-    </td> -->
-    <td class="logo-col1">
-      <a href="https://mitibmwatsonailab.mit.edu/" target="_blank" title="MIT-IBM Watson AI Lab">
-        <img class="logo-figure1" src="data/logos/mit-ibm-ai-lab-logo.png" alt="MIT-IBM Watson AI Lab"></a>
-    </td>
-    <td class="logo-col1">
-      <a href="https://www.google.com/" target="_blank" title="Google">
-        <img class="logo-figure1" src="data/logos/google-logo.jpg" alt="Google"></a>
-    </td>
-  </tr>
+    <div class="menu-title">MISC</div>
+    <div class="menu-item"><a href="https://www.bilibili.com/video/av35787189" target="_blank">我们自35班 <span
+          class='fas fa-external-link-alt fa-1x'></span> </a></div>
+    <div class="menu-item"><a href="#soccer_anchor" onclick="collapseFunction('soccer_anchor');">Soccer</a></div>
+    <div class="menu-item"><a href="#running_anchor" onclick="collapseFunction('running_anchor');">Running</a></div>
 
-    <tr>
-    <td class="logo-col1">
-      <a href="https://usa.honda-ri.com/" target="_blank" title="Honda Research">
-        <img class="logo-figure1" src="data/logos/hri-us-logo-2018.png" alt="Honda Research"></a>
-    </td>
-    <td class="logo-col1">
-      <a href="https://www.tusimple.com/" target="_blank" title="TuSimple">
-        <img class="logo-figure1" src="data/logos/TuSimple-Logo.jpg" alt="TuSimple"></a>
-    </td>
-    <td class="logo-col1">
-      <a href="https://smart.mit.edu/" target="_blank" title="Singapore-MIT Alliance">
-        <img class="logo-figure1" src="data/logos/smart-logo.png" alt="Singapore-MIT Alliance"></a>
-    </td>
-  </tr>
-  </table>
+    <div class="bottom-logos">
+      <p></p>
+      <a class="fa-a" href="https://www.facebook.com/yue.meng.75" target="_blank">
+        <span class="fab fa-facebook fa-2x"></span>
+      </a>
+      <a class="fa-a" href="https://github.com/mengyuest" target="_blank">
+        <span class="fab fa-github fa-2x"></span>
+      </a>
+      <a class="fa-a" href="https://www.linkedin.com/in/yuemeng95" target="_blank">
+        <span class="fab fa-linkedin fa-2x"></span>
+      </a>
+      <a class="fa-a" href="https://www.instagram.com/misha_ucsd" target="_blank">
+        <span class="fab fa-instagram fa-2x"></span>
+      </a>
+      <p></p>
+    </div> -->
 
-
-  <h2>Contact</h2>
-<ul><li><p>Email: mengyuethu@gmail.com</p></li></ul>
-<ul><li><p>Email: mengyue@mit.edu</p></li></ul>
-
-<h2 id="publications_anchor">Publications</h2>
-<table>
-  <tr>
-    <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png"/> </td>
-    <td class="pub-text">
-    <h3>Density of Reachable States and How to Use it for Safe Autonomous Motion Planning</h3>
-    <p><b>Y. Meng</b>, Z. Qiu, M. T. B. Waez, C. Fan<br />
-    <i>NASA Formal Methods Symposium (NFM), 2022</i><br />
-    [<a href="https://drive.google.com/file/d/1Q-cU3MRY-nd2wydaSzwJ76cMy9DVIjQa/view?usp=sharing">pdf</a>]
-    <p>
-     Recent work provides a data-driven approach to compute the density distribution of autonomous systems’ forward reachable states online. In this paper, we study the use of such approach in combination with model predictive control for verifiable safe path planning under uncertainties. We design two challenging scenarios (autonomous driving and hovercraft control) for safe motion planning in environments with obstacles under system uncertainties. By leveraging the estimated risk, our algorithm achieves the highest success rate in goal reaching when enforcing the safety rate above 0.99.</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="pub-figure"> <img class="pub-img" src="data/corl2021.png"/> </td>
-    <td class="pub-text">
-    <h3>Learning Density Distribution of Reachable States for Autonomous Systems</h3>
-    <p><b>Y. Meng</b>, D. Sun, Z. Qiu, M. T. B. Waez, C. Fan<br />
-    <i>Conference of Robotics and Learning (CoRL), 2021</i><br />
-    [<a href="https://arxiv.org/pdf/2109.06728.pdf">arXiv</a>][<a href="https://github.com/mengyuest/nn_reachable_density/">code</a>][<a href="https://youtu.be/GiL7pRFgr0s">seminar</a>]
-    <p>In this work, we propose a data-driven method to compute the density distribution of reachable states for nonlinear systems. Our approach learns system dynamics and the state density jointly from trajectory data, guided by the fact that the state density evolution follows the Liouville partial differential equation. We show that our learned solution can produce a much more accurate estimate on density distribution, and can quantify risks less conservatively and flexibly compared with worst-case analysis.</p>
-    </td>
-  </tr>
-
-  <tr>
-    <!-- <td class="pub-figure"> <img class="pub-img" src="data/preprint.png"/> </td> -->
-    <td class="pub-figure"> <img class="pub-img" src="data/iros2021.gif"/> </td>
-    <td class="pub-text">
-      <h3>Reactive and Safe Road User Simulations using Neural Barrier Certificates</h3>
-      <p><b>Y. Meng</b>, Z. Qin, C. Fan<br />
-      <i>IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), 2021.</i> <br />
-      [<a href="https://arxiv.org/pdf/2109.06689.pdf">arXiv</a>][<a href="http://realm.mit.edu/reactive-agent-models/">page</a>][<a href="https://github.com/mengyuest/reactive_cbf/">code</a>][<a href="https://youtu.be/GiL7pRFgr0s">seminar</a>]
-      <p>We proposed a reactive agent model which can ensure safety by learning high-level decisions from expert data and a low level decentralized controller guided by the jointly learned decentralized barrier certificates. Empirical results show that our approach can achieve a significant improvement in safety while being similar to human behaviors.</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="pub-figure"> <img class="pub-img" src="data/iclr2021.gif"/> </td>
-    <td class="pub-text">
-      <h3>AdaFuse: Adaptive Temporal Fusion Network for Efficient Action Recognition</h3>
-      <p><b>Y. Meng</b>, R. Panda, C. Lin, P. Sattigeri, L. Karlinsky, K. Saenko, A. Oliva and R. Feris<br />
-      <i>Int. Conf. on Learning Representations (ICLR), 2021.</i><br />
-    [<a href="https://arxiv.org/pdf/2102.05775.pdf">arXiv</a>][<a href="https://mengyuest.github.io/AdaFuse/">page</a>][<a href="https://github.com/mengyuest/AdaFuse">code</a>]</p> 
-      <p>This paper introduces an adaptive temporal fusion, AdaFuse, that dynamically fuses channels for strong temporal modelling. Extensive experiments on SomethingV1\&V2, Jester and Mini-Kinetics show AdaFuse achieves 40\% computation savings with comparable accuracy to state-of-the-art methods</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="pub-figure"> <img class="pub-img" src="data/eccv2020.gif"/> </td>
-    <td class="pub-text">
-      <h3>AR-Net: Adaptive Frame Resolution for Efficient Action Recognition</h3>
-      <p><b>Y. Meng</b>, C. Lin, R. Panda, P. Sattigeri, L. Karlinsky, K. Saenko, A. Oliva and R. Feris<br />
-      <i>European Conf. on Computer Vision (ECCV), 2020.</i><br />
-    [<a href="https://arxiv.org/pdf/2007.15796.pdf">arXiv</a>][<a href="https://mengyuest.github.io/AR-Net">page</a>][<a href="https://github.com/mengyuest/AR-Net">code</a>]</p>  
-    <p>This paper proposes a novel approach, AR-Net (Adaptive  Resolution  Network),  that  selects  on-the-fly the optimal resolution for each frame conditioned on the input for efficient action recognition in long untrimmed videos. Extensive experiments on several action recognition datasets well demonstrate the efficacy of our method over state-of-the-art.</p>
-    </td>
-  </tr>
-
-<tr>
-  <td class="pub-figure"> <img class="pub-img" src="data/icra2020_after.gif"/> </td>
-  <td class="pub-text">
-    <h3>Learning 3D-aware Egocentric Spatial-Temporal Interaction via Graph Convolutional Networks</h3>
-    <p>C. Li, <b>Y. Meng</b>, S. Chan and Y. Chen<br />
-    <i>IEEE Int. Conf. on Robotics and Automation (ICRA), 2020.</i><br />
-    [<a href="https://arxiv.org/pdf/1909.09272.pdf">arXiv</a>][<a href="https://sites.google.com/site/yitingchen0524/research/driver-centric-risk-assessment/">page</a>]</p>
-    <p>This paper proposes a 3D-aware egocentric spatial-temporalinteraction framework for automated   driving applications. Graph convolution networks (GCN)  is  devised  for  interaction modeling. Extensive   experiments   are   conducted using  Honda  Research  Institute  Driving  Dataset.</p>
-  </td>
-</tr>
-  
-<tr>
-  <td class="pub-figure"> <img class="pub-img" src="data/iros2019.gif"/> </td>
-  <td class="pub-text">
-    <h3>Localization and Mapping using Instance-specific Mesh Models</h3>
-    <p>Q. Feng, <b>Y. Meng</b>, M. Shan and N. Atanasov<br />
-    <i>IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), 2019.</i> <br />
-    [<a href=" https://natanaso.github.io/ref/Feng_DeformableMeshModel_IROS19.pdf">pdf</a>]</p>
-    <p>This paper focuses on building semantic maps, containing object poses and shapes, using a monocular camera. Our
-    contribution is an instance-specific mesh model of object shape
-    that can be optimized online based on semantic information extracted from camera images.</p>
-    </td>
-</tr>
-
-<tr>
-  <td class="pub-figure"> <img class="pub-img" src="data/signet.gif"/> </td>
-  <td class="pub-text">
-    <h3>SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception</h3>
-    <p><b>Y. Meng</b>, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia<br />
-    <i>IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2019.</i> <br />
-    [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Meng_SIGNet_Semantic_Instance_Aided_Unsupervised_3D_Geometry_Perception_CVPR_2019_paper.pdf">pdf</a>][<a href="https://mengyuest.github.io/SIGNet/">page</a>][<a href="https://github.com/mengyuest/SIGNet">code</a>]</p>
-    <p>This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%</p>
-  </td>
-</tr>
-
-<tr>
-  <td class="pub-figure"> <img class="pub-img" src="data/rss2018workshop-1.png"/> </td>
-  <td class="pub-text">
-    <h3>Dense Spatial Segmentation from Sparse Semantic Information</h3>
-    <p>Q. Feng, <b>Y. Meng</b> and N. Atanasov<br />
-    <i>Workshop at Robotics: Science and Systems (RSS), 2018.</i> <br />
-    [<a href="https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view">pdf</a>]</p>
-    <p>This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation.</p>
-  </td>
-</tr>
-
-<tr>
-  <td class="pub-figure"> <img class="pub-img" src="data/cosim.gif"/> </td>
-  <td class="pub-text">
-    <h3>Cooperative Driving Strategies for Nonsignalized Intersections</h3>
-    <p><b>Yue Meng</b>, Li Li, Fei-Yue Wang, Keqiang Li and Zhiheng Li<br />
-    <i>IEEE Transactions on Vehicular Technology (TVT), 2017.</i> <br />
-    [<a href="https://www.researchgate.net/profile/Li_Li240/publication/321640653_Analysis_of_Cooperative_Driving_Strategies_for_Non-Signalized_Intersections/links/5a2a88e245851552ae77e917/Analysis-of-Cooperative-Driving-Strategies-for-Non-Signalized-Intersections.pdf">pdf</a>]</p>
-    <p>We study the difference between two major strategies of cooperative driving at intersections: the “ad hoc negotiation based” strategy and the "planning based" strategy. We carry out a series of simulations under different traffic scenarios for comparison. Results indicate the performance of a strategy mainly depends on the passing order of vehicles that it finds.</p>
-  </td>
-</tr>
-
-</table>
-
-<!-- <div>
-  <span class="pub-figure"> <img class="pub-img" src="data/signet.gif"/> </span>
-  <span class="pub-text"></span>
-</div> -->
-
-
-
-<h2>Links</h2>
-  <ul>
-  <li><p><a href="https://existentialrobotics.org">Existential Robotics Laboratory</a></p>
-  </li>
-  <li><p><a href="https://wcsng.ucsd.edu">Wireless Communication Systems and Networking Group</a></p>
-  </li>
-  <li><p><a href="https://www.bilibili.com/video/av35787189">自35班毕业纪念视频</a></p>
-  </li>
-  <li><p><a href="http://www.tsinghuaveterans.com/">Tsinghua Veteran Soccer Team</a></p>
-  </li>
-  <li><p><a href="https://sites.google.com/view/nccsfweb/teams/tsinghua-veterans-bay-area">Tsinghua Veteran Bay Area Soccer Team</a></p>
-  </li>
-  <li><p><a href="https://sites.google.com/view/nccsfweb/teams/calblue">CalBlue Soccer Team</a></p>
-  </li>
-  <li><p><a href="https://sites.google.com/view/sdred/">San Diego Red Army Soccer Team</a></p>
-  </li>
-  </ul>
-
-<h2 id="collecting_anchor" class="collapsible">Collecting (click to see more)</h2>
-<div class="content">
-  <h3>Routine</h3>
-  <ul>
-  <li><p><a href="https://arxiv.org/list/cs.CV/recent">arXiv: Computer Vision and Pattern Recognition</a></p>
-  </li>
-  <li><p><a href="http://www.arxiv-sanity.com/">arXiv Sanity</a></p>
-  </li>
-  <li><p><a href="https://assert.pub/">Top 10 arXiv papers Today</a></p>
-  </li>
-  </ul>
-  <h3>Procastination</h3>
-  <ul>
-  <li><p><a href="https://www.bilibili.com/video/av3584431/">央视纪录片《高考》</a></p>
-  </li>
-  <li><p><a href="https://aideadlin.es/?sub=RO,CV,ML">AI Conference Deadlines</a></p>
-  </li>
-  <li><p><a href="https://www.cmu.edu/randyslecture">Randy Pausch's Last Lecture</a></p>
-  </li>
-  <li><p><a href="https://www.youtube.com/watch?v=a1zDuOPkMSw">You and Your Research</a></p>
-  </li>
-  </ul>
-  <h3>Ph.D.</h3>
-  <ul>
-  <li><p><a href="https://zhuanlan.zhihu.com/p/29636455">北美博士必读清单</a></p>
-  </li>
-  <li><p><a href="https://www.zhihu.com/question/28920341">大牛写的非技术类作品</a></p>
-  </li>
-  <li><p><a href="http://faculty.neu.edu.cn/cc/zhangyf/papers/CraftingFuture.pdf">Crafting Your Research Future</a></p>
-  </li>
-  <li><p><a href="https://www.cs.unc.edu/~azuma/hitch4.html">CS Graduate Survival Guide</a></p>
-  </li>
-  <li><p><a href="http://3dvision.princeton.edu/courses/COS598/2014sp/slides/lecture21_how2research.pdf">Doing research in Computer Vision</a></p>
-  </li>
-  </ul>
-  <h3>Robotics</h3>
-  <ul>
-  <li><p><a href="https://github.com/kanster/awesome-slam">Awesome SLAM</a></p>
-  </li>
-  <li><p><a href="https://arxiv.org/pdf/1606.05830.pdf">Past, Present and Future of SLAM</a></p>
-  </li>
-  <li><p><a href="http://ais.informatik.uni-freiburg.de/teaching/ws11/robotics2/pdfs/rob2-13-frontends.pdf">SLAM Front-Ends</a></p>
-  </li>
-  <li><p><a href="http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Triggs00.pdf">Bundle Adjustment: A Modern Synthesis</a></p>
-  </li>
-  <li><p><a href="http://cs.brown.edu/research/ai/pomdp/tutorial/">POMDP</a></p>
-  </li>
-  </ul>
-  <h3>Technician</h3>
-  <ul>
-  <li><p><a href="http://www.docs.is.ed.ac.uk/skills/documents/3722/3722-2014.pdf">LaTeX for Beginners</a></p>
-  </li>
-  <li><p><a href="https://github.com/onqtam/awesome-cmake">Awesome CMake</a></p>
-  </li>
-  <li><p><a href="https://cgold.readthedocs.io/en/latest/">CGold: The Hitchhiker's Guide to the CMake</a></p>
-  </li>
-  </ul>
-  <h3>Blogs</h3>
-  <ul>
-  <li><p><a href="http://www.computervisionblog.com/">Tombone's Computer Vision Blog</a></p>
-  </li>
-  <li><p><a href="http://www.pgbovine.net/writings.htm">Philip Guo</a></p>
-  </li>
-  <li><p><a href="https://www.kennethreitz.org/">Kenneth Reitz</a></p>
-  </li>
-  </ul>
-</div>
-
-  <h2 id="soccer_anchor" class="collapsible">Soccer (click to see more)</h2>
-  <div class="content">
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-000.jpg" alt="soccer-000" width="500px" />&nbsp;</td>
-  <td><p>Champion of Haidian District Soccer League, 2011</p></td></tr>
-  <tr>
-    <td><img class="misc-img" src="data/soccer-00.jpg" alt="soccer-00" width="500px" />&nbsp;</td>
-    <td><p>High School Class Soccer Team, 2012</p></td>
-  </tr>
-  <tr><td>
-  <img class="misc-img" src="data/soccer-da-0.png" alt="soccer-2" width="500px" />&nbsp;</td>
-  <td><p>Dept. Automation Men's Soccer, 2013</p>
-  </td></tr></table> -->
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-0.jpg" alt="soccer-0" width="500px" />&nbsp;</td>
-  <td><p>High school friends in THU-PKU Derby, 2014 </p>
-  </td></tr></table>
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-02.JPG" alt="soccer-02" width="500px" />&nbsp;</td>
-  <td><p>Best class soccer team at Tsinghua, 2014 </p>
-  </td></tr></table> -->
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-01.JPG" alt="soccer-01" width="500px" />&nbsp;</td>
-  <td><p>Champion at Tsinghua Futsal Tournament, 2014 </p>
-  </td></tr></table>
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-3.jpg" alt="soccer-3" width="500px" />&nbsp;</td>
-  <td><p>Classmates in the soccer team, 2015</p>
-  </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-4.png" alt="soccer-4" width="500px" />&nbsp;</td>
-  <td><p>The 3rd place at Tsinghua Futsal Tournament, 2015</p>
-  </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-9.jpg" alt="soccer-9" width="500px" />&nbsp;</td>
-  <td><p>Coaching Dept. Automation Women's Soccer, 2015</p>
-  </td></tr></table> -->
-  <table class="imgtable"><tr><td>
-    <img class="misc-img" src="data/soccer-13.png" alt="soccer-1" width="500px" />&nbsp;</td>
-    <td><p>Champion at Automation Tournament, 2016 </p>
-    </td></tr></table>
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-5.jpg" alt="soccer-5" width="500px" />&nbsp;</td>
-  <td><p>Tsinghua Men's Soccer Team, 2016</p>
-  </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-6.jpg" alt="soccer-6" width="500px" />&nbsp;</td>
-  <td><p>Coaching Tsinghua Women's Soccer, 2016</p>
-  </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-1.png" alt="soccer-1" width="500px" />&nbsp;</td>
-  <td><p>Champion at Automation Tournament, 2017 </p>
-  </td></tr></table> -->
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-7.jpg" alt="soccer-7" width="500px" />&nbsp;</td>
-  <td><p>Champion at Chinese Alumni League, 2017</p>
-  </td></tr></table>
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-8.jpg" alt="soccer-8" width="500px" />&nbsp;</td>
-  <td><p>The 2nd place at Triton World Cup, 2017</p>
-  </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-    <img class="misc-img" src="data/soccer-12.jpg" alt="soccer-12" width="500px" />&nbsp;</td>
-    <td><p>NJ Star Soccer Team, Maryland, 2018</p>
-    </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-10.jpg" alt="soccer-9" width="500px" />&nbsp;</td>
-  <td><p>Tsinghua Veteran Bay Area Soccer Team, 2019</p>
-  </td></tr></table> -->
-  <table class="imgtable"><tr><td>
-  <img class="misc-img"  src="data/soccer-10-.jpg" alt="soccer-10" width="500px" />&nbsp;</td>
-  <td><p>Champion at SV Alumni Soccer Tournament, 2019</p>
-  </td></tr></table>
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/soccer-11.jpg" alt="soccer-11" width="500px" />&nbsp;</td>
-  <td><p>Calblue Soccer Team, 2019</p>
-  </td></tr></table> -->
   </div>
+  <div class="main" id="main_anchor">
+    <h1>Yi, Zeji (易泽吉)</h1>
+    <!-- <hr> </hr> -->
 
-  <h2 class="collapsible" id="running_anchor">Running (click to see more)</h2>
-  <div class="content">
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-3.jpg" alt="running-4" width="500px" />&nbsp;</td>
-  <td><p>High school record, 2012 (3000m race)</p>
-  </td></tr></table>
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-4.jpg" alt="running-3" width="500px" />&nbsp;</td>
-  <td><p>Unlimited relay race champion at BUAA, 2014 </p>
-  </td></tr></table>
-  <!-- <table class="imgtable"><tr><td>
-    <img class="misc-img" src="data/run-ma.jpg" alt="running-ma" width="500px" />&nbsp;</td>
-    <td><p>Dept. Automation, Champion of the 57th Tsinghua Sports Meeting, 2014</p>
-    </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-6.jpg" alt="running-6" width="500px" />&nbsp;</td>
-  <td><p>Best 4*800m race teams, Tsinghua Sports Meeting, 2014</p>
-  </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-7.jpg" alt="running-7" width="500px" />&nbsp;</td>
-  <td><p>10*1000m race champion, Tsinghua Sports Meeting, 2015</p>
-  </td></tr></table> -->
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-2.png" alt="running-2" width="500px" />&nbsp;</td>
-  <td><p>1500m race champion, Tsinghua Sports Meeting, 2015</p>
-  </td></tr></table>
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-1.jpg" alt="running-1" width="500px" />&nbsp;</td>
-  <td><p>4*800m race champion, Tsinghua Sports Meeting, 2015</p>
-  </td></tr></table>
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-5.jpg" alt="running-5" width="500px" />&nbsp;</td>
-  <td><p>4*400m race champion, Tsinghua Sports Meeting, 2016</p>
-  </td></tr></table>
-</div>
-  <!-- <table class="imgtable"><tr><td>
-    <img class="misc-img" src="data/run-11.jpg" alt="running-10" width="500px" />&nbsp;</td>
-    <td><p>5000m 2nd place, 17th Northern California Chinese Culture Federation Sports Meeting, 2019</p>
-    </td></tr></table> -->
-  <!-- <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-9.jpg" alt="running-9" width="500px" />&nbsp;</td>
-  <td><p>5000m Champion in Tsinghua Alumni Athletic Meeting (TAAM), 2019</p>
-  </td></tr></table>
-  <table class="imgtable"><tr><td>
-  <img class="misc-img" src="data/run-10.jpg" alt="running-10" width="500px" />&nbsp;</td>
-  <td><p>Dept. Automation won the Champion in the 1st TAAM, 2019</p>
-  </td></tr></table> -->
+    <p>I am a Master student at School of Aerospace Engineering, Tsinghua University,
+      working in <a href="https://lnsgroup.cc"><b>LNS Group</b></a> under NERCN. <br />
+      My research interest lies in the <b>intersection of control, learning, and optimization</b>. <br />
+      I aim to design safe and robust autonomous systems with trustworthy learned modules or other optimization and
+      statistical tools. <br />
+      I received a B.S. degree in the School of Aerospace Engineering from Tsinghua University.
+    </p>
+
+    <table>
+      <tr class="row">
+        <td class="logo-col">
+          <a href="https://www.tsinghua.edu.cn/en/" target="_blank" title="Tsinghua">
+            <img class="logo-figure" src="data/logos/THU-logo.png" alt="Tsinghua"></a>
+        </td>
+      </tr>
+    </table>
 
 
+    <h2>Contact</h2>
+    <ul>
+      <li>
+        <p>Email: yizj20@mails.tsinghua.edu.cn</p>
+      </li>
+    </ul>
 
-  <footer> <!-- 本站所有网页的统一页脚 -->
-    <!-- Statcounter code for My homepage https://mengyuest.github.io/ on Google Sites (new) -->
-<script type="text/javascript">
-  var sc_project=11797803;
-  var sc_invisible=0;
-  var sc_security="54080103";
-  var sc_text=2;
-  var scJsHost = "https://";
-  document.write("浏览量: <sc"+"ript type='text/javascript' src='" +
-  scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script>
-  <noscript><div class="statcounter"><a title="hit counter"
-  href="https://statcounter.com/" target="_blank"><img
-  class="statcounter"
-  src="https://c.statcounter.com/11797803/0/54080103/0/"
-  alt="hit counter"></a></div></noscript>
-  <!-- End of Statcounter Code -->
-  </footer>
+    <h2>Scholarship</h2>
+    <table>
+      <tr>
+        <td>
+          <p>● Graduate with Honor: Tsien Excellence in Education Program</p>
+        </td>
+        <td>
+          <p>2020</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>● Tsinghua Academic Excellence Scholarship (Top 10%)</p>
+        </td>
+        <td>
+          <p>2018,2019</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>● Second Class Prize of China Undergraduate Mathematical Contest in Modeling &ensp;&ensp;&ensp;</p>
+        </td>
+        <td>
+          <p>2017</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>● First Class Prize of Chinese Physics Olympiad (CPHO) (Top 2%)</p>
+        </td>
+        <td>
+          <p>2016</p>
+        </td>
+      </tr>
 
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    console.log(coll.length);
-    var i;
-  
-    for (i = 0; i < coll.length; i++) {
-      // coll[i].addEventListener("click", function() {
-      //   this.classList.toggle("active");
-      //   var content = this.nextElementSibling;
-      //   if (content.style.display === "block") {
-      //     content.style.display = "none";
-      //   } else {
-      //     content.style.display = "block";
-      //   }
-      // });
 
-      coll[i].onclick = function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-          this.textContent = this.textContent.split(" ")[0] + " (click to see more)";
-        } else {
-          content.style.display = "block";
-          this.textContent = this.textContent.split(" ")[0] + " (click to collapse)";
-        }
-      };
-    }
-  </script>
+      <tr>
+        <td>
+          <p>● Tsinghua-Xuetang Scholar for Excellent Foster Innovative Talent</p>
+        </td>
+        <td>
+          <p>2016-2018</p>
+        </td>
+      </tr>
 
-  <script>
-    function collapseFunction(id) {
-      var coll = document.getElementById(id);
-      coll.classList.toggle("active");
-      var content = coll.nextElementSibling;
-      content.style.display = "block";
-      coll.textContent = coll.textContent.split(" ")[0] + " (click to collapse)";
-    }
-  </script>
+    </table>
+
+    <h2 id="publications_anchor">Publications</h2>
+    <table>
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/acc2020.png" /> </td>
+        <td class="pub-text">
+          <h3>Nonlinear Covariance Control via Differential Dynamic Programming</h3>
+          <p><b>Zeji Yi</b>, Zhefeng Cao, Evangelos Theodorou, and Yongxin Chen<br />
+            <i>American Control Conference 2020</i><br />
+            [<a href="https://arxiv.org/abs/1911.09283v1">arXiv</a>]
+
+          <p>
+            We consider covariance control problems for nonlinear stochastic systems. Our objective is to find an
+            optimal control strategy to steer the state from an initial distribution to a terminal one with specified
+            mean and covariance. This problem is considerably more complicated than previous studies on covariance
+            control for linear systems. We leverage a widely used technique - differential dynamic programming - in
+            nonlinear optimal control to achieve our goal. In particular, we adopt the stochastic differential dynamic
+            programming framework to handle the stochastic dynamics. Additionally, to enforce the terminal statistical
+            constraints, we construct a Lagrangian and apply a primal-dual type algorithm. Several examples are
+            presented to demonstrate the effectiveness of our framework.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/icml2022.png" /> </td>
+        <td class="pub-text">
+          <h3>High-dimensional Optimistic Safe Optimization with Projection to Distance-preserving, Quasi-physical
+            Spaces</h3>
+          <p><b>Zeji Yi</b>, Yunyue Wei, Hongda Li, Yanan Sui<br />
+            <i>ICML 2022 ReALML Workshop</i><br />
+            [<a href="https://realworldml.github.io/files/cr/paper38.pdf">arXiv</a>]
+          <p>Many real-life sampling problems are high-dimensional and require safety guarantee during
+            optimization. Current safe exploration algorithms ensure safety by conservatively expand-
+            ing the safe region, leading to inefficiency in large-scale input settings. In this paper, we
+            propose a practical method, which utilizes auto-encoder to link physical prior of certain
+            problems with index-based input space and also projects the original input space into a
+            low-dimensional subspace. The low-dimensional space can be viewed as a quasi-conformal
+            transformation of space with explicit physical meaning. An optimistic safe strategy to effi-
+            ciently optimize the utility function is carried in the low-dimensional space then. We show
+            in simulation that our method outperforms representative safe exploration algorithms while
+            sacrificing little safety. Clinically, our proposed method also achieved better or competitive
+            performance on two high-dimensional neural stimulation optimization tasks comparing to
+            human experts.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <!-- <td class="pub-figure"> <img class="pub-img" src="data/preprint.png"/> </td> -->
+        <td class="pub-figure"> <img class="pub-img" src="data/MCMC-BO.png" /> </td>
+        <td class="pub-text">
+          <h3>Improving sample efficiency of high dimensional bayesian optimization with MCMC on approximated posterior
+            ratio</h3>
+          <p><b>Zeji Yi</b>, Yunyue wei, Cloris Cheng, Kaibo He<br />
+            <i>Submitted to ICML2023</i> <br />
+            <!-- [<a href="https://arxiv.org/pdf/2109.06689.pdf">arXiv</a>] -->
+            <!-- <p>We proposed a reactive agent model which can ensure safety by learning high-level decisions from expert
+            data and a low level decentralized controller guided by the jointly learned decentralized barrier
+            certificates. Empirical results show that our approach can achieve a significant improvement in safety while
+            being similar to human behaviors.</p> -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/idea.png" /> </td>
+        <td class="pub-text">
+          <h3>A Remote Adaptive Upper-Limb Training Framework With Collaborative Robot</h3>
+          <p>Jun Hong Lim, <b>Zeji Yi</b>, Kaibo He, Chen Hou, Yanan Sui<br />
+            <i>Submitted to ICRA2023</i><br />
+            <!-- [<a href="https://arxiv.org/pdf/2102.05775.pdf">arXiv</a>] -->
+          </p>
+          <!-- <p>This paper introduces an adaptive temporal fusion, AdaFuse, that dynamically fuses channels for strong
+            temporal modelling. Extensive experiments on SomethingV1\&V2, Jester and Mini-Kinetics show AdaFuse achieves
+            40\% computation savings with comparable accuracy to state-of-the-art methods</p> -->
+        </td>
+      </tr>
+
+    </table>
+
+
+    <h2 id="research_anchor">Research Experience</h2>
+    <table>
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>Adversarial learning of control parameters</h3>
+          <p>Advisor: ChuChu Fan, Assistant Professor at Department of Aeronautics and Astronautics, MIT<br />
+            <i>Summer 2022 - Now</i><br />
+          <p>
+            ● Generating rare/unsafe cases with one or two order larger probability compared with the original
+            environment <br />
+            ● Constructed a network based distribution for control parameters with reparameterization <br />
+            ● Optimized the control parameters based on interpolated density calculated from Liouville equation <br />
+          </p>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>High-Dim Bayesian Optimization with MCMC, Beijing, China</h3>
+          <p>Advisor: Yanan Sui, Associate Professor at School of Aerospace, THU<br />
+            <i>Spring - Fall 2022</i><br />
+          <p>
+            ● Significantly improved the efficiency of Bayesian optimization on high dimensional space on synthetic
+            functions and RL benchmarks compared to current SOTA algorithm <br />
+            ● Elaborated an MCMC-based candidate selecting method to reduce the computation cost <br />
+            ● Naturally provided paralleled solution for batched Bayesian optimization <br />
+            ● Gave Theoretical regret bound of the algorithm and guarantee the convergence <br />
+          </p>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>Coactive learning for dueling bandits, Beijing, China</h3>
+          <p>Advisor: Yanan Sui, Associate Professor at School of Aerospace, THU, and Yisong Yue, Professor of Computing
+            and
+            Mathematical Sciences at CalTech
+            <br />
+            <i>Summer 2022 - Now</i><br />
+          <p>
+            ● Proposed a new exact regret bound to replace the original asymptotic analysis of convergence <br />
+            ● Expanded the original coactive learning framework with gradient information for better interaction with
+            human <br />
+            ● Integrated Kalman Filter and Langevin dynamics to sampling problem on Gaussian Process <br />
+
+          </p>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>Machine Learning assisted Spinal Cord Stimulation, Beijing, China</h3>
+          <p>Advisor: Yanan Sui, Associate Professor at School of Aerospace, THU<br />
+            <i>Fall 2021 - Spring 2022</i><br />
+          <p>
+            ● Proposed and designed a data-driven System for Spinal Cord Stimulation (Data collecting, Pre-processing)
+            <br />
+            ● Optimized Stimulation Parameter with Safety Bayesian Optimization under different constraints <br />
+            ● Constructed Pre-trained model and Auto-encoders to learn sufficient low-dimensional representation for
+            high-dimensional hybrid inputs with regularization term and likelihood function <br />
+            ● Theoretical analysis of Bayesian optimization's convergence in latent space <br />
+          </p>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>Covariance Steering and Differential-Dynamic-Programming, Atlanta, GA, US</h3>
+          <p>Advisor: Yongxin Chen, Assistant Professor at School of Aerospace Engineering, GaTech<br />
+            <i>July 2020 - December 2020</i><br />
+          <p>
+            ● Proposed a covariance steering method for nonlinear stochastic system <br />
+            ● Solved optimization problem with hard terminal constraint in primal dual algorithm <br />
+            ● Designed the optimal control policy with open-loop and closed-loop control by differential dynamic
+            programming method designed for stochastic dynamic systems <br />
+            ● Developed differential-dynamic programming in belief space, eliminated the uncertainty in propagation and
+            gave a more transparent explanation for the system <br />
+
+          </p>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>Grasping Objects with Robot-arm Carried by Quadrotors, Beijing, China | Project Leader</h3>
+          <p>Advisor: Geng Lu, Assistant Professor at School of Control Science, THU<br />
+            <i>Aug 2017 - Spring 2020 </i><br />
+          <p>
+            ● Built a dynamical model for the highly coupled arm-quad system with multi rigid body dynamics and gained
+            the forward and inverse dynamics solution <br />
+            ● Motion Planning considering the coupling effect by the functional minimum snap method <br />
+            ● Fused the robot arm and quadrotor's controller with the dynamics solution and eliminated the disturbance
+            of quadrotor caused by the robot arm by the feedforward control <br />
+            ● Object detection with RGBD camera and located the quadrotor with indoor location system <br />
+
+          </p>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>Interactive Scenario in Autonomous Vehicle, Berkeley, CA, US | Research Assistant</h3>
+          <p>Advisor: Masayoshi Tomizuka, Professor at School of Mechnical Engineering, UCB<br />
+            <i>July 2018 - Sep 2018</i><br />
+          <p>
+            ● Independently constructed a sequential strategy capable of handling multi interactive agents under
+            information symmetric and asymmetric conditions based on Monte-Carlo method <br />
+            ● Independently realized and optimized a multi-layer inference algorithm in interactive motion planning
+            using A* search and provided a more efficiency heuristic cost <br />
+
+          </p>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png" /> </td>
+        <td class="pub-text">
+          <h3>Building and Controlling Quadruped Robot, Beijing, China | Research Assistant</h3>
+          <p>Advisor: Ou Ma, Professor at School of Aerospace, THU<br />
+            <i>Aug 2017 - Aug 2018</i><br />
+          <p>
+            ● Designed and optimized the configuration of the robot's legs, lowered the maximum torque during walking by
+            20% and expanded the workspace of each leg by 30% <br />
+            ● Determined the motion of the legs to achieve the step by forcing periodic swinging sinusoidal centroid
+            orbit while maintaining the robot's stability <br />
+
+          </p>
+
+        </td>
+      </tr>
+
+    </table>
+
+
+    <footer>
+      <!-- 本站所有网页的统一页脚 -->
+      <!-- Statcounter code for My homepage https://mengyuest.github.io/ on Google Sites (new) -->
+      <script type="text/javascript">
+        var sc_project = 11797803;
+        var sc_invisible = 0;
+        var sc_security = "54080103";
+        var sc_text = 2;
+        var scJsHost = "https://";
+        document.write("浏览量: <sc" + "ript type='text/javascript' src='" +
+          scJsHost +
+          "statcounter.com/counter/counter.js'></" + "script>");
+      </script>
+      <noscript>
+        <div class="statcounter"><a title="hit counter" href="https://statcounter.com/" target="_blank"><img
+              class="statcounter" src="https://c.statcounter.com/11797803/0/54080103/0/" alt="hit counter"></a></div>
+      </noscript>
+      <!-- End of Statcounter Code -->
+    </footer>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      console.log(coll.length);
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        // coll[i].addEventListener("click", function() {
+        //   this.classList.toggle("active");
+        //   var content = this.nextElementSibling;
+        //   if (content.style.display === "block") {
+        //     content.style.display = "none";
+        //   } else {
+        //     content.style.display = "block";
+        //   }
+        // });
+
+        coll[i].onclick = function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            this.textContent = this.textContent.split(" ")[0] + " (click to see more)";
+          } else {
+            content.style.display = "block";
+            this.textContent = this.textContent.split(" ")[0] + " (click to collapse)";
+          }
+        };
+      }
+    </script>
+
+    <script>
+      function collapseFunction(id) {
+        var coll = document.getElementById(id);
+        coll.classList.toggle("active");
+        var content = coll.nextElementSibling;
+        content.style.display = "block";
+        coll.textContent = coll.textContent.split(" ")[0] + " (click to collapse)";
+      }
+    </script>
 
 </body>
+
 </html>
